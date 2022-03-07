@@ -1,0 +1,20 @@
+{
+  "name": "bumagithub.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "https://github.com/bumagithub/bumagithub.github.io.git",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "deploy": "gh-pages -d src/.vuepress/dist -b main",
+    "deploybuild": "yarn build && yarn deploy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "vuepress": "^1.5.3",
+    "vuepress-plugin-autometa": "^0.1.13",
+    "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-plugin-social-share": "^1.0.0"
+  }
+}

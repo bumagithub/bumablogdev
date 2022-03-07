@@ -1,0 +1,63 @@
+.homepage
+  .logo
+    display: none
+
+  > .home
+    padding: 0
+    max-width: unset
+
+    .hero
+      padding-top: 7rem
+
+      img
+        width: 160px
+        height: 160px
+        margin: auto
+
+      h1
+        display: none    
+
+.navbar
+  border: 0
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.08)
+
+  .search-box > input
+    border-color: transparent
+    border-radius: 0.5rem
+    background-color: rgba(0, 0, 0, 0.05)
+
+    &.focused
+      background-color: transparent
+
+.page
+  min-height 100vh
+  box-sizing border-box
+
+.nav-item > .dropdown-wrapper
+  .nav-dropdown
+    border: 0
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2)
+
+    .dropdown-item
+      .nav-link
+        border-left: 2px solid transparent
+        transition: 0.3s
+
+        &.router-link-active
+          border-left-color: $accentColor
+
+        &::after
+          content: none
+
+.link-buttons
+  margin: 1.8rem auto 5rem
+  padding: 0
+  list-style: none
+  text-align: center
+
+  li
+    display: inline-block
+
+@require "./extra.styl"
+@require "./responsive.styl"
+@require "./dark.styl"
